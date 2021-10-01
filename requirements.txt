@@ -1,0 +1,110 @@
+argon2-cffi==21.1.0
+async-generator==1.10
+attrs==21.2.0
+backcall==0.2.0
+bcj-cffi==0.5.1
+bleach==4.1.0
+Brotli==1.0.9
+cached-property==1.5.2
+certifi==2021.5.30
+cffi==1.14.6
+charset-normalizer==2.0.6
+colorama==0.4.4
+cvxopt==1.2.5
+cvxpy @ file:///C:/Miniconda/conda-bld/cvxpy_1594404675047/work
+cycler==0.10.0
+dataclasses==0.8
+decorator==5.1.0
+defusedxml==0.7.1
+dill @ file:///tmp/build/80754af9/dill_1623919422540/work
+easydict==1.9
+ecos @ file:///C:/Miniconda/conda-bld/ecos_1609667510280/work
+entrypoints==0.3
+fastcache==1.1.0
+feather-format==0.4.1
+future==0.18.2
+h5py==3.1.0
+idna==3.2
+importlib-metadata==4.8.1
+ipykernel==5.5.5
+ipython==7.16.1
+ipython-genutils==0.2.0
+ipywidgets==7.6.5
+jedi==0.18.0
+Jinja2==3.0.1
+joblib @ file:///tmp/build/80754af9/joblib_1613502643832/work
+jsonschema==3.2.0
+jupyter==1.0.0
+jupyter-client==7.0.5
+jupyter-console==6.4.0
+jupyter-core==4.8.1
+jupyterlab-pygments==0.1.2
+jupyterlab-widgets==1.0.2
+kiwisolver==1.3.1
+llvmlite==0.36.0
+MarkupSafe==2.0.1
+matplotlib==3.3.4
+mistune==0.8.4
+mkl-fft==1.3.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+multiprocess==0.70.11.1
+multivolumefile==0.2.3
+nbclient==0.5.4
+nbconvert==6.0.7
+nbformat==5.1.3
+nest-asyncio==1.5.1
+notebook==6.4.4
+numba==0.53.1
+numexpr @ file:///C:/ci/numexpr_1614798717152/work
+numpy==1.19.5
+osqp @ file:///C:/Miniconda/conda-bld/osqp_1609665234398/work
+packaging==21.0
+pandas @ file:///C:/ci/pandas_1608056614942/work
+pandocfilters==1.5.0
+parso==0.8.2
+pickleshare==0.7.5
+Pillow==8.3.2
+prometheus-client==0.11.0
+prompt-toolkit==3.0.20
+py7zr==0.16.1
+pyarrow==5.0.0
+pycox==0.2.2
+pycparser==2.20
+pycryptodomex==3.10.4
+Pygments==2.10.0
+pyparsing==2.4.7
+pyppmd==0.16.1
+pyrsistent==0.18.0
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz @ file:///tmp/build/80754af9/pytz_1612215392582/work
+pywin32==301
+pywinpty==1.1.4
+pyzmq==22.3.0
+pyzstd==0.14.4
+qtconsole==5.1.1
+QtPy==1.11.2
+requests==2.26.0
+scikit-learn==0.22.1
+scikit-survival @ file:///C:/Miniconda/conda-bld/scikit-survival_1602092387140/work
+scipy @ file:///C:/ci/scipy_1597675683670/work
+scs @ file:///C:/Miniconda/conda-bld/scs_1609081105388/work
+Send2Trash==1.8.0
+six @ file:///tmp/build/80754af9/six_1623709665295/work
+terminado==0.12.1
+testpath==0.5.0
+texttable==1.6.4
+threadpoolctl @ file:///Users/ktietz/demo/mc3/conda-bld/threadpoolctl_1629802263681/work
+torch==1.9.1+cu111
+torchaudio==0.9.1
+torchtuples==0.2.2
+torchvision==0.10.1+cu111
+tornado==6.1
+traitlets==4.3.3
+typing-extensions==3.10.0.2
+urllib3==1.26.7
+wcwidth==0.2.5
+webencodings==0.5.1
+widgetsnbextension==3.5.1
+wincertstore==0.2
+zipp==3.6.0

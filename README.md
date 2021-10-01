@@ -50,3 +50,15 @@ or try to install from the requirement.txt
 pip3 install -r requirements.txt
 ```
 
+
+
+### :smile:If you find this result interesting, please consider to cite this paper:
+
+```latex
+@article{wang2021survtrace,
+    title={Surv{TRACE}: Transformers for Survival Analysis with Competing Events},
+    author={Zifeng Wang and Jimeng Sun},
+    year={2021},
+}
+```
+

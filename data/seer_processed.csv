@@ -1,0 +1,6 @@
+,Sex,Year of diagnosis,"Race recode (W, B, AI, API)",Histologic Type ICD-O-3,Laterality,Sequence number,ER Status Recode Breast Cancer (1990+),PR Status Recode Breast Cancer (1990+),Summary stage 2000 (1998-2017),RX Summ--Surg Prim Site (1998+),Reason no cancer-directed surgery,First malignant primary indicator,Diagnostic Confirmation,Median household income inflation adj to 2019,Regional nodes examined (1988+),CS tumor size (2004-2015),Total number of benign/borderline tumors for patient,Total number of in situ/malignant tumors for patient,duration,event_heart,event_breast
+0,0,1,3,1,1,1,2,1,2,9,5,0,3,8,-0.4846347586032304,-0.3387091024422154,-0.0797974800682939,0.9410350466488367,81,0.0,1.0
+1,0,1,3,0,1,1,1,1,2,9,5,0,3,8,-0.4846347586032304,-0.1932974113094419,-0.0797974800682939,0.9410350466488367,7,0.0,0.0
+2,0,9,3,5,4,2,0,0,1,0,0,0,3,8,4.834512283839197,3.441994867009897,-0.0797974800682939,2.454366561886044,28,0.0,1.0
+3,0,8,3,0,4,1,2,2,1,4,5,0,3,8,-0.4846347586032304,-0.334882478991353,-0.0797974800682939,2.454366561886044,75,0.0,0.0
+4,0,10,3,0,4,1,2,2,1,13,5,0,3,8,-0.4309060005987615,-0.3080961148353157,-0.0797974800682939,0.9410350466488367,57,0.0,0.0

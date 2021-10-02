@@ -52,11 +52,28 @@ pip3 install -r requirements.txt
 
 
 
+### 🔥How to get SEER data
+
+1. Go to https://seer.cancer.gov/data/ to ask for data request from SEER following the guide there.
+
+2. After complete the step one, we should have the following **seerstat software** for data access. Open it and sign in with the username and password sent by seer.
+
+   <img src="./figure/seer_1.png" alt="image-20211002113822232" style="zoom:80%;" />
+
+3. Use seerstat to open the **./data/seer.sl** file, we shall see the following. 
+
+<img src="./figure/seer_2.png" alt="image-20211002113822232" style="zoom:50%;" />
+
+Click on the 'excute' icon to request from the seer database. We will obtain a csv file.
+
+4. move the csv file to **./data/seer_raw.csv**, then run the python script **process_seer.py**, we will obtain the processed seer data named **seer_processed.csv**.
+
+
+
 ### 📝Functions
 
 - [x] single event survival analysis
-- [ ] competing events survival analysis
-- [ ] IPS-guided competing events survival analysis
+- [x] competing events survival analysis
 - [ ] multi-task learning
 - [ ] automatic hyperparameter grid-search
 

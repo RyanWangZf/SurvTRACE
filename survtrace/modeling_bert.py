@@ -219,8 +219,8 @@ class BertEmbeddings(nn.Module):
         self.dropout = nn.Dropout(config.hidden_dropout_prob)
 
     def forward(
-        self, input_ids=None, input_x_num=None, inputs_embeds=None, past_key_values_length=0
-    ):
+        self, input_ids=None, input_x_num=None, inputs_embeds=None,
+        ):
 
         if inputs_embeds is None:
             inputs_embeds = self.word_embeddings(input_ids)
@@ -229,7 +229,6 @@ class BertEmbeddings(nn.Module):
         embeddings = self.dropout(embeddings)
         # embeddings = self.LayerNorm(embeddings)
         return embeddings
-
 
 class BertSelfAttention(nn.Module):
     def __init__(self, config):
@@ -513,22 +512,37 @@ class BertCLS(nn.Module):
                 w_init_=w_init)
         )
         net.append(nn.Linear(config.intermediate_size, config.out_feature))
-
-
-        # for _ in range(2):
-        #     net.append(
-        #         DenseVanillaBlock(config.intermediate_size, config.intermediate_size,
-        #             batch_norm=True, dropout=config.hidden_dropout_prob, activation=nn.ReLU,
-        #             w_init_=w_init)
-        #     )
-        
-        # net.append(nn.Linear(config.hidden_size, config.out_feature))
         self.net = nn.Sequential(*net)
 
     def forward(self, hidden_states):
         hidden_states = hidden_states.flatten(start_dim=1)
         hidden_states = self.net(hidden_states)
         return hidden_states
+
+class BertCLSMulti(nn.Module):
+    def __init__(self, config):
+        super().__init__()
+        # concatenate embeddings of all features
+        net = []
+        w_init = lambda w: nn.init.kaiming_normal_(w, nonlinearity="relu")
+        net.append(
+            DenseVanillaBlock(config.hidden_size * config.num_feature, config.intermediate_size,
+                batch_norm=True, dropout=config.hidden_dropout_prob, activation=nn.ReLU,
+                w_init_=w_init)
+        )
+
+        self.net = nn.Sequential(*net)
+
+        net_out = []
+        for _ in range(config.num_event):
+            net_out.append(nn.Linear(config.intermediate_size, config.out_feature))
+        self.net_out = nn.ModuleList(net_out)
+
+    def forward(self, hidden_states, event=0):
+        hidden_states = hidden_states.flatten(start_dim=1)
+        hidden_states = self.net(hidden_states)
+        output = self.net_out[event](hidden_states)
+        return output
 
 class BertEncoder(nn.Module):
     def __init__(self, config):

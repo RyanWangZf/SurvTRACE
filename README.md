@@ -52,6 +52,16 @@ pip3 install -r requirements.txt
 
 
 
+### 📝Functions
+
+- [x] single event survival analysis
+- [ ] competing events survival analysis
+- [ ] IPS-guided competing events survival analysis
+- [ ] multi-task learning
+- [ ] automatic hyperparameter grid-search
+
+
+
 ### :smile:If you find this result interesting, please consider to cite this paper:
 
 ```latex
@@ -61,4 +71,3 @@ pip3 install -r requirements.txt
     year={2021},
 }
 ```
-

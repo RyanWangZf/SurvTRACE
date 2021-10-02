@@ -58,11 +58,11 @@ pip3 install -r requirements.txt
 
 2. After complete the step one, we should have the following **seerstat software** for data access. Open it and sign in with the username and password sent by seer.
 
-   <img src="./figure/seer_1.png" alt="image-20211002113822232" style="zoom:50%;" />
+  <img src="./figure/seer_1.png" width="350" align="center" />
 
-3. Use seerstat to open the **./data/seer.sl** file, we shall see the following. 
+3. Use seerstat to open the **./data/seer.sl** file, we shall see the following.
 
-<img src="./figure/seer_2.png" alt="image-20211002113822232" style="zoom:30%;" />
+  <img src="./figure/seer_2.png" width="500" align="center" />  
 
 Click on the 'excute' icon to request from the seer database. We will obtain a csv file.
 

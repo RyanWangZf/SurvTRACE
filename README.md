@@ -4,10 +4,10 @@ This repo provides the implementation of **SurvTRACE** for survival analysis. It
 
 ```python
 from survtrace.dataset import load_data
-from survtrace.evaluate_utils import Evaluator
-from survtrace.train_utils import Trainer
-from survtrace.config import STConfig
 from survtrace.model import SurvTraceSingle
+from survtrace import Evaluator
+from survtrace import Trainer
+from survtrace import STConfig
 
 # use METABRIC dataset
 STConfig['data'] = 'metabric'
@@ -66,7 +66,13 @@ pip3 install -r requirements.txt
 
 Click on the 'excute' icon to request from the seer database. We will obtain a csv file.
 
-4. move the csv file to **./data/seer_raw.csv**, then run the python script **process_seer.py**, we will obtain the processed seer data named **seer_processed.csv**.
+4. move the csv file to **./data/seer_raw.csv**, then run the python script **process_seer.py**, as
+
+   ```shell
+   python process_seer.py
+   ```
+
+   we will obtain the processed seer data named **seer_processed.csv**.
 
 
 

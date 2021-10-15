@@ -89,8 +89,11 @@ Click on the 'excute' icon to request from the seer database. We will obtain a c
 
 ```latex
 @article{wang2021survtrace,
-    title={Surv{TRACE}: Transformers for Survival Analysis with Competing Events},
-    author={Zifeng Wang and Jimeng Sun},
-    year={2021},
+      title={Surv{TRACE}: Transformers for Survival Analysis with Competing Events}, 
+      author={Zifeng Wang and Jimeng Sun},
+      year={2021},
+      eprint={2110.00855},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
 }
 ```

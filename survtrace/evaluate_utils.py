@@ -18,13 +18,12 @@ class Evaluator:
                         dtype = [('e', bool), ('t', float)])
         times = model.config['duration_index'][1:-1]
         horizons = model.config['horizons']
-        et_train = self.et_train
 
         df_test, df_y_test = test_set
         surv = model.predict_surv(df_test, batch_size=val_batch_size)
         risk = 1 - surv
         
-        durations_test, events_test = self.get_target(df_y_test)
+        durations_test, events_test = get_target(df_y_test)
         et_test = np.array([(events_test[i], durations_test[i]) for i in range(len(events_test))],
                     dtype = [('e', bool), ('t', float)])
 

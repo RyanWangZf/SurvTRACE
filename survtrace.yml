@@ -1,9 +1,10 @@
 name: survtrace
 channels:
-  - defaults
   - conda-forge
   - nvidia
   - pytorch
+  - sebp
+  - defaults
 dependencies:
   - python=3.6
   - brotlipy
@@ -12,11 +13,10 @@ dependencies:
   - torchvision
   - torchaudio
   - cudatoolkit=11.1
-  - pip:
-    - scikit-survival==0.14.0
-    - torchtuples==0.2.2
-    - matplotlib==3.3.4
-    - pycox==0.2.2
-    - pandas==1.1.5
-    - easydict==1.9
-prefix: E:\anaconda3\envs\survtrace
+  - scikit-survival==0.14.0
+  - torchtuples==0.2.2
+  - matplotlib==3.3.4
+  - pycox==0.2.2
+  - pandas==1.1.5
+  - easydict==1.9
+# prefix: E:\anaconda3\envs\survtrace
